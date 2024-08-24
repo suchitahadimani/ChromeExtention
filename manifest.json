@@ -1,0 +1,25 @@
+{
+    "name": "Productivity Timer for Workaholics",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "A tool to prevent overworking and burnout.",
+    "author": "ur bestie <3",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Ready to start working?"
+        
+    },
+    "icons":{
+        "128": "icon.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+    "permissions" : ["activeTab", "alarms", "notifications", "storage"]
+}

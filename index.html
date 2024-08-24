@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity for Workaholics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>Ready to start working? Here's a cringe joke to start off your session!</h2>
+        <p id="jokes"> Cringe loading.... </p>
+
+        <div  id="timer-container">
+            <div id="timer">
+                <label for="custom-time-input">Set Custom Time (minutes):</label>
+                <input type="text" id="custom-time-input" placeholder="Enter minutes" required>
+                <!-- spans are invisible until you add text to it-->
+                <!-- id is very very useful for making changes using scripts-->
+                <span id="timer-text"></span>
+            </div>
+
+            <!-- things in the same div can be given the same set of styling -->
+            <div id="timer-buttons">
+                <button class="button" id="start">Start</button>
+                <button class="button" id="stop">Stop</button>
+                <button class="button" id="reset" disabled>Reset</button>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <!-- Scripts are always placed right before the end of the body-->
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: inner-flex;
+    margin: auto 10px;
+    font-size: 22px;
+    color: blue;
+    border-radius: 6px;
+    border: 1px solid #add8e6;
+    padding: 10px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust spacing between timer and buttons */
+}
+
+.button {
+    background-color: #add8e6; /* Blue color */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Adjust the padding to create a rectangular shape */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px; 
+}
+
+
+.button:hover {
+    background-color: #F7DC6F; /* Yellow color on hover */
+}
+
+#timer-container {
+    margin-top: 20px; /* Adjust spacing between sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer-buttons {
+    margin-top: 20px; /* Adjust spacing between sections */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#custom-time-input {
+    padding: 8px;
+    margin: 8px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block
+}
